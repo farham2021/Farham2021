@@ -1,0 +1,21 @@
+{
+  "name": "حسابداری شخصی علی",
+  "short_name": "حسابداری",
+  "description": "داشبورد مالی شخصی، درآمد، هزینه، وام و تطبیق بانکی",
+  "lang": "fa",
+  "dir": "rtl",
+  "id": "/Farham2021/accounting/",
+  "start_url": "/Farham2021/accounting/",
+  "scope": "/Farham2021/accounting/",
+  "display": "standalone",
+  "background_color": "#101b30",
+  "theme_color": "#101b30",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
