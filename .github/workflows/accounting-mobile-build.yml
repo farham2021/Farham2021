@@ -7,7 +7,7 @@ on:
       - '.github/workflows/accounting-mobile-build.yml'
 jobs:
   android:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -17,10 +17,11 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-      - uses: android-actions/setup-android@v3
       - name: Create Android shell
         working-directory: accounting/mobile
         run: |
+          mkdir -p www
+          cp ../index.html ../manifest.webmanifest ../icon.svg ../sw.js www/
           npm install --no-audit --no-fund
           npx cap add android
           npx cap sync android
@@ -42,6 +43,8 @@ jobs:
       - name: Create iOS simulator shell
         working-directory: accounting/mobile
         run: |
+          mkdir -p www
+          cp ../index.html ../manifest.webmanifest ../icon.svg ../sw.js www/
           npm install --no-audit --no-fund
           npx cap add ios
           npx cap sync ios
