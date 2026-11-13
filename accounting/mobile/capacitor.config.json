@@ -1,7 +1,7 @@
 {
   "appId": "com.alijafari.personalfinance",
   "appName": "Ali Personal Finance",
-  "webDir": "../",
+  "webDir": "www",
   "server": {
     "url": "https://farham2021.github.io/Farham2021/accounting/",
     "cleartext": false
