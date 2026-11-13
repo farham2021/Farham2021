@@ -1,0 +1,21 @@
+{
+  "name": "ali-personal-finance-mobile",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Capacitor native shells for the shared accounting PWA",
+  "scripts": {
+    "cap:ios": "npx cap add ios",
+    "cap:android": "npx cap add android",
+    "cap:sync": "npx cap sync",
+    "cap:open:ios": "npx cap open ios",
+    "cap:open:android": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/ios": "^7.0.0",
+    "@capacitor/android": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0"
+  }
+}
